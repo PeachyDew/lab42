@@ -12,12 +12,13 @@ namespace lab42
 {
     public partial class Form1 : Form
     {
+        int i;
         public Form1()
         {
             InitializeComponent();
         }
 
-        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
+        private void numericUpDown1_ValueChanged(object sender, EventArgs e) //first
         {
             if (numericUpDown1.Value % 2 == 1) {
                 numericUpDown1.Value = numericUpDown1.Value + 1;
@@ -25,7 +26,6 @@ namespace lab42
                 textBox1.Text = numericUpDown1.Value.ToString();
             }
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             MessageBox.Show(numericUpDown1.Value.ToString());
@@ -42,4 +42,5 @@ namespace lab42
             }
         }
     }
-}
+ 
+ }
