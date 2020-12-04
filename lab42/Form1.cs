@@ -53,7 +53,7 @@ namespace lab42
         private void UpdateFromModel(object sender, EventArgs e)
         {
             textBox1.Text = model.getValue().ToString();
-            numericUpDown1.Value = model.getValue();
+            numericUpDown1.Value = model.getValue( );
             progressBar1.Value = model.getValue();
         }
 
@@ -69,7 +69,7 @@ namespace lab42
                 }
                 else 
                 {
-                    this.value = value + 1;
+                    this.value = value;
                 }
                 observers.Invoke(this, null);
             }
@@ -77,6 +77,11 @@ namespace lab42
             { 
                 return value;
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
