@@ -83,5 +83,10 @@ namespace lab42
         {
 
         }
+
+        private void hScrollBar1_Scroll(object sender, ScrollEventArgs e)
+        {
+            model.setValue(Decimal.ToInt32(hScrollBar1.Value));
+        }
     }
 }

@@ -32,12 +32,14 @@
             this.button1 = new System.Windows.Forms.Button();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.hScrollBar1 = new System.Windows.Forms.HScrollBar();
+            this.pageSetupDialog1 = new System.Windows.Forms.PageSetupDialog();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // numericUpDown1
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(598, 93);
+            this.numericUpDown1.Location = new System.Drawing.Point(93, 76);
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(120, 20);
             this.numericUpDown1.TabIndex = 0;
@@ -50,7 +52,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(111, 178);
+            this.button1.Location = new System.Drawing.Point(93, 32);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 1;
@@ -60,7 +62,7 @@
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(598, 129);
+            this.progressBar1.Location = new System.Drawing.Point(93, 125);
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(120, 23);
             this.progressBar1.TabIndex = 2;
@@ -68,18 +70,28 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(598, 178);
+            this.textBox1.Location = new System.Drawing.Point(93, 176);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(120, 20);
             this.textBox1.TabIndex = 3;
             this.textBox1.Text = "42";
             this.textBox1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox1_KeyDown);
             // 
+            // hScrollBar1
+            // 
+            this.hScrollBar1.Location = new System.Drawing.Point(93, 213);
+            this.hScrollBar1.Name = "hScrollBar1";
+            this.hScrollBar1.Size = new System.Drawing.Size(120, 17);
+            this.hScrollBar1.TabIndex = 4;
+            this.hScrollBar1.Value = 42;
+            this.hScrollBar1.Scroll += new System.Windows.Forms.ScrollEventHandler(this.hScrollBar1_Scroll);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.hScrollBar1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.button1);
@@ -99,6 +111,8 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.HScrollBar hScrollBar1;
+        private System.Windows.Forms.PageSetupDialog pageSetupDialog1;
     }
 }
 
